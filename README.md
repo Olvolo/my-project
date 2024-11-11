@@ -32,7 +32,7 @@ git commit -m "Add blog folder with index.js and index.html"
 # Возвращение в основную ветку (main)
 git checkout main
 
-# Подключение к удаленному репозиторию (замените <URL-репозитория> на адрес вашего удаленного репозитория)
+# Подключение к удаленному репозиторию
 git remote add origin https://github.com/Olvolo/my-project.git
 
 # Отправка основной ветки на удаленный репозиторий
