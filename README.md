@@ -21,7 +21,9 @@ git checkout new-branch
 
 # Создание папки blog и файлов index.js, index.html
 mkdir blog
-touch blog/index.js blog/index.html
+New-Item -ItemType File -Path "blog/index.js"   // сработало в терминале PowerShell
+New-Item -ItemType File -Path "blog/index.html" // сработало в терминале PowerShell
+
 
 # Добавление папки blog в коммит и его создание
 git add blog/
@@ -31,7 +33,7 @@ git commit -m "Add blog folder with index.js and index.html"
 git checkout main
 
 # Подключение к удаленному репозиторию (замените <URL-репозитория> на адрес вашего удаленного репозитория)
-git remote add origin <URL-репозитория>
+git remote add origin https://github.com/Olvolo/my-project.git
 
 # Отправка основной ветки на удаленный репозиторий
 git push -u origin main
